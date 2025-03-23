@@ -1,0 +1,6 @@
+Person "Client"
+   - (Request Discount) -> System "DiscountService"
+System "DiscountService"
+   - (Fetch User Category) -> System "UserProfileService"
+System "UserProfileService"
+   - (Provide User Category) -> System "DiscountService"
